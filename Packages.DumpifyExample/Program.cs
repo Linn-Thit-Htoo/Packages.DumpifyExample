@@ -13,18 +13,20 @@ var blog = new BlogModel()
 
 blog.Dump();
 
-var lst = Enumerable.Range(1, 3).Select(x =>
-{
-    BlogModel blog = new BlogModel()
+var lst = Enumerable
+    .Range(1, 3)
+    .Select(x =>
     {
-        BlogId = Guid.NewGuid().ToString(),
-        BlogTitle = "Test Title",
-        BlogAuthor = "Test Author",
-        BlogContent = "Test Content"
-    };
+        BlogModel blog = new BlogModel()
+        {
+            BlogId = Guid.NewGuid().ToString(),
+            BlogTitle = "Test Title",
+            BlogAuthor = "Test Author",
+            BlogContent = "Test Content"
+        };
 
-    return blog;
-});
+        return blog;
+    });
 lst.Dump();
 
 Console.ReadKey();
