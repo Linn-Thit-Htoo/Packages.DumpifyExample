@@ -1,7 +1,4 @@
-﻿using Dumpify;
-using Packages.DumpifyExample;
-
-new { Name = "Dumpify", Description = "Dump any object to Console" }.Dump();
+﻿new { Name = "Dumpify", Description = "Dump any object to Console" }.Dump();
 
 var blog = new BlogModel()
 {
