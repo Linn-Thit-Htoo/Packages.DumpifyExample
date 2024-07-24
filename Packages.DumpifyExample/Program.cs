@@ -1,6 +1,5 @@
 ﻿using Dumpify;
 using Packages.DumpifyExample;
-using System.Reflection.Metadata;
 
 new { Name = "Dumpify", Description = "Dump any object to Console" }.Dump();
 
