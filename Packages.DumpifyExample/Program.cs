@@ -1,4 +1,7 @@
-﻿new { Name = "Dumpify", Description = "Dump any object to Console" }.Dump();
+﻿string message = "Hello";
+message.Dump();
+
+new { Name = "Dumpify", Description = "Dump any object to Console" }.Dump();
 
 var blog = new BlogModel()
 {
